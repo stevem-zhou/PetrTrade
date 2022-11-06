@@ -44,7 +44,7 @@ div.gallery{
     width: 40px;
 }
 
-#post th button {
+#post th popup {
     align-items: left;
     padding-left: 30px;
     padding-right: 40px;
@@ -68,4 +68,9 @@ div.gallery{
     font-size: 70px;
     align-items: center;
 
+}
+
+#popup{
+    display: flex;
+    align-items: left;
 }

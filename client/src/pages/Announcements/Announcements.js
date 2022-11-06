@@ -1,5 +1,7 @@
 import React from 'react';
 import "./Announcements.css";
+import AnnouncePopup from '../../components/annoucementform/announcepopup';
+import AnnouncementForm from '../../components/annoucementform/announcementform';
 
 function CreateAnnouncement(){
 
@@ -21,7 +23,7 @@ function Announcements() {
             <h1 class="head-spacer"></h1>
             <table id="Announcement-title">
                 <tr>
-                    <th><button onclick = "CreateAnnouncement()">Create Announcement</button></th>
+                    <th><AnnouncePopup><AnnouncementForm></AnnouncementForm></AnnouncePopup></th>
                     <th ><h1>Announcements</h1></th>
                 </tr>
             </table>
