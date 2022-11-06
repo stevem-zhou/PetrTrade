@@ -28,7 +28,7 @@ router.put('/', async(req, res)=> {
     // console.log(id);
     try{
         const updatingstatus = await Listing.findByIdAndUpdate(id, {status: true});
-        // res.send(updatingstatus);
+        res.send(updatingstatus);
     } catch (err){
         console.error(err)
     }
