@@ -2,10 +2,21 @@ import React from 'react';
 import './petrImage.css';
 
 // name, instagram handle, date/time of drop
-function PetrImage(name, ig, dt) {
-    
+// function PetrImage(name, ig, dt) {
 
-    <a href="#" title="Santorini">
-        <img height="250" src="https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="Santorini" title="Santorini" />
-    </a>
-} 
+const PetrImage = ({ name, image, ig, dt }) => {
+    return (
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href={image}>
+                    <img src={image} alt={name} width="600" height="400"></img>
+                </a>
+                <div class="desc">{name}</div>
+                <div class="desc">{ig}</div>
+                <div class="desc">{dt}</div>
+            </div>
+        </div>
+    );
+};
+
+export default PetrImage;
