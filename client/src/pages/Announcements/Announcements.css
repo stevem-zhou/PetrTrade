@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+body {
+    background-color: rgb(202, 201, 201);
+}
+
+#Announcement-title {
+    font-style: 'Poor Story';
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+
+#Announcement-title th:nth-child(1) {
+    width: 5px;
+}
+
+#Announcement-title th button {
+    align-items: left;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgb(150, 150, 150);
+    color: white;
+    border-color: rgb(202, 201, 201);
+    font-style: "Helvetica";
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#Announcement-title th button:hover {
+    background-color: rgb(99, 96, 96);
+}
+
+#Announcement-title th h1 {
+    font-size: large;
+    font-family: "Poor Story";
+    font-size: 80px;
+    align-items: left;
+
+}
+
+.polaroid a {
+    background: #ffffff;
+    display: inline-block;
+    margin: 55px 75px 30px;
+    padding: 15px 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -webkit-transition: all .20s linear;
+    -moz-transition: all .20s linear;
+    transition: all .20s linear;
+    z-index: 0;
+    position: relative;
+}
+
+.polaroid a:after {
+    color: #333;
+    font-size: 25px;
+    content: attr(title);
+    position: relative;
+    top: 15px;
+}
+
+.polaroid img {
+    display: block;
+    width: 250px;
+}
+
+.polaroid a:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index: 10;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+}

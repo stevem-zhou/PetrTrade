@@ -1,0 +1,21 @@
+.oneListing {
+    background-color: grey;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    border: 1px;
+    text-align: center;
+
+}
+
+;
+
+.imageClassL {
+    width: 100px;
+    height: 100px;
+}
+
+.imageScale {
+    max-width: 50px;
+    max-height: 50px;
+}

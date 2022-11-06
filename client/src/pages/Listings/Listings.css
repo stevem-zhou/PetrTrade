@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+.wholeListing{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-around;
+}
+
+.petrTitle{
+    order: 1;
+}
+
+
+
+.listings {
+    order: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    column-gap:30px;
+    row-gap: 30px;
+    /* margin: 0 150px; */
+    background-color: rgb(202, 201, 201);
+
+}
+
+
+div.gallery{
+    margin-bottom: 0;
+}
+
+#post {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+#post th:nth-child(1) {
+    width: 40px;
+}
+
+#post th button {
+    align-items: left;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgb(150, 150, 150);
+    color: white;
+    border-color: rgb(202, 201, 201);
+    font-style: "Helvetica";
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#post th button:hover {
+    background-color: rgb(99, 96, 96);
+}
+
+#post th h1 {
+    font-size: large;
+    font-family: "Poor Story";
+    font-size: 70px;
+    align-items: center;
+
+}

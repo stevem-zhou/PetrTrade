@@ -1,25 +1,31 @@
+
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+
 import logo from './logo.svg';
 import './App.css';
+import Announcements from "./pages/Announcements/Announcements.js";
+import Listings from "./pages/Listings/Listings.js";
+import NavBar from "./components/NavBar/NavBar.js";
+import ListingForm from "./components/ListingForm/ListingForm.js"
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Announcements />} />
+        <Route path="/Listings" element={<Listings />} />
+        <Route path="/test" element={<ListingForm />} />
+      </Routes>
+    </Router>
   );
 }
 
-export default App;
+
