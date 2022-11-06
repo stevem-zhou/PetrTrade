@@ -1,6 +1,8 @@
 import React from 'react';
 import "./Announcements.css";
 import PetrImage from '../../components//Announcement/petrImage';
+import AnnouncePopup from '../../components/annoucementform/announcepopup';
+import AnnouncementForm from '../../components/annoucementform/announcementform';
 
 
 //name, image, ig, date
@@ -20,7 +22,7 @@ function Announcements() {
             <h1 class="head-spacer"></h1>
             <table id="Announcement-title">
                 <tr>
-                    <th><button class="open button" onclick="CreateAnnouncement()">Create Announcement</button></th>
+                    <th><AnnouncePopup><AnnouncementForm></AnnouncementForm></AnnouncePopup></th>
                     <th ><h1>Announcements</h1></th>
                 </tr>
             </table>

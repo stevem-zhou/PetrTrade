@@ -3,6 +3,8 @@ import axios from 'axios';
 //import React from 'react';
 import "./Listings.css";
 import Listing from '../../components/Listing/Listing';
+import Popup from '../../components/ListingForm/popup';
+import ListingForm from '../../components/ListingForm/ListingForm';
 
 
 
@@ -50,7 +52,7 @@ function Listings(images) {
             </div>
             <table id="post">
                 <tr>
-                    <th><button>POST</button></th>
+                    <th><Popup><ListingForm></ListingForm></Popup></th>
                     <th><h1>Petr Sticker Trade</h1></th>
                 </tr>
             </table>

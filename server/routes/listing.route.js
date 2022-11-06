@@ -4,16 +4,21 @@ const router = express.Router();
 const Listing = require('../models/listing.model');
 
 router.post('/', async (req, res) => {
-    const newListing = new Listing({
-        name: req.body.name,
-        image: req.body.image,
-        caption: req.body.caption,
-        contactinfo: req.body.contactinfo,
-        date: req.body.date,
-        status: req.body.status
-    })
-    await newListing.save();
-    res.json(newListing);
+    try{
+        const newListing = new Listing({
+            name: req.body.name,
+            image: req.body.image,
+            caption: req.body.caption,
+            contactinfo: req.body.contactinfo,
+            date: req.body.date,
+            status: req.body.status
+        })
+        await newListing.save();
+        res.status(200).send(newListing);
+    }catch(err){
+        console.error(err.message);
+        res.status(500).send(err.message);
+    }
 })
 
 
