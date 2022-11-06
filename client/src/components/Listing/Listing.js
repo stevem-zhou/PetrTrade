@@ -14,7 +14,7 @@ const Listing = ({ id, name, image, caption, contact, date, time, status }) => {
             <h4>{name}</h4>
             <div class="imageClassL"><img class="imageScale" src={image} alt=""/></div>
             <h5>{caption}</h5>
-            <p ccontactL">{contact}<br/>
+            <p ccontact>{contact}<br/>
                 {date},{time}<br/>
                 {status}</p>
         </div>
