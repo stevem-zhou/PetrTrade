@@ -9,8 +9,7 @@ const AnnouncementForm = (announcement) => {
     const [newImage, setNewImage] = useState();
     const [newInstagram, setNewInstagram] = useState();
 
-    function handle_submit(event){
-        event.preventDefault();
+    function handle_submit(){
         axios.post(
             `${NODE_URL}/announcements`,
             {
@@ -21,7 +20,30 @@ const AnnouncementForm = (announcement) => {
             }
         );
     };
+
+    function changedate(event){
+        event.preventDefault();
+        console.log(event.target.value);
+        setNewDate(event.target.value);
+    }
     
+    function changetime(event){
+        event.preventDefault();
+        console.log(event.target.value);
+        setNewTime(event.target.value);
+    }
+
+    function changeimage(event){
+        event.preventDefault();
+        console.log(event.target.value);
+        setNewImage(event.target.value);
+    }
+
+    function changeinstagram(event){
+        event.preventDefault();
+        console.log(event.target.value);
+        setNewInstagram(event.target.value);
+    }
 
     return (<div className="form">
            
@@ -29,16 +51,16 @@ const AnnouncementForm = (announcement) => {
             <form onSubmit={handle_submit}>
 
             <label for="date">Date:</label>
-            <input onChange={setNewDate} type="text" id="date" name="date"></input>
+            <input onChange={changedate} type="text" id="date" name="date"></input>
 
             <label for="time;">Time:</label>
-            <input onChange = {setNewTime}type="text" id="time" name="time"></input>
+            <input onChange = {changetime}type="text" id="time" name="time"></input>
 
             <label for="image">Image:</label>
-            <input onChange={setNewImage}type="text" id="image" name="captiimageon"></input>
+            <input onChange={changeimage}type="text" id="image" name="captiimageon"></input>
 
             <label for="instagram">Instagram:</label>
-            <input onChange={setNewInstagram}type="text" id="instagram" name="instagram"></input>
+            <input onChange={changeinstagram}type="text" id="instagram" name="instagram"></input>
 
             <button type="submit" value="Submit"> Submit</button>
             </form>

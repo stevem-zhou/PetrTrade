@@ -11,8 +11,7 @@ const ListingForm = (listing) => {
     const [newDate, setNewDate] = useState();
 
     
-    function handle_submit(event){
-        event.preventDefault();
+    function handle_submit(){
         axios.post(
             `${NODE_URL}/listing`,
             {

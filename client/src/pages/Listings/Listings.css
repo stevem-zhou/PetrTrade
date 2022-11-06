@@ -67,6 +67,8 @@ div.gallery{
     font-family: "Poor Story";
     font-size: 70px;
     align-items: center;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 
 }
 

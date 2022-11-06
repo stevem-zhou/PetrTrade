@@ -48,7 +48,7 @@ function Listings(images) {
                 <Listing id={"3"} name={"PE"} image={"https://findicons.com/files/icons/1714/dropline_neu/128/dialog_information.png"} caption={"nullpetr"} contact={"1"} date={"1"} time={"1"} status={"1"} />
                 <Listing id={"4"} name={"PETR FIVE"} image={"https://findicons.com/files/icons/1714/dropline_neu/128/dialog_information.png"} caption={""} contact={"1"} date={"1"} time={"1"} status={"1"} /> */}
 
-                {listings.map(l => <Listing id={l.id} name={l.name} image={l.image} caption={l.image} contact={l.contact} date={l.date} time={l.time} status={l.status} /> )}
+                {listings.map(l => <Listing id={l.id} name={l.name} image={l.image} caption={l.caption} contact={l.contact} date={l.date} time={l.time} status={l.status} /> )}
             </div>
             <table id="post">
                 <tr>
@@ -56,7 +56,15 @@ function Listings(images) {
                     <th><h1>Petr Sticker Trade</h1></th>
                 </tr>
             </table>
+            <p align="center">
+                Find new Petr sticker to build your collection!! 
+                Upload your own listings with the "Post" button.
+            </p>
+        
+
+            
         </div>
+        
     )
 }
 
