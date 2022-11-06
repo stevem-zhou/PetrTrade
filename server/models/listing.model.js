@@ -5,8 +5,9 @@ const listingSchema = new mongoose.Schema({
   image: String,
   caption: String,
   contactinfo: String,
-  date: Date,
-  status: Boolean,
+  date: String,
+  status: {type: Boolean,
+    default:false},
 });
 const Listing = mongoose.model('Listing', listingSchema);
 module.exports = Listing;

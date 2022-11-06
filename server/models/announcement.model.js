@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
 
 const announcementSchema = new mongoose.Schema({
-    datetime: Date,
+    date: String,
+    time: String,
     image: String,
     instagram: String,
 })
 
 const Announce = mongoose.model("Announcement", announcementSchema);
 
-module.exports = Announce;
+module.exports = Announce;  
